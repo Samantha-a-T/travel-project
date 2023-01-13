@@ -1,0 +1,23 @@
+header {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+    url(/media/bologna.jpg);
+  background-position: center;
+  background-size: cover;
+  height: 400px;
+  max-width: 1300px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.heading {
+font-family: 'Tenor Sans', sans-serif;
+
+  color: white;
+  font-size: 60px;
+
+  line-height: 50px;
+}
+p {
+  font-family: "Montserrat", sans-serif;
+}
