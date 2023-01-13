@@ -1,23 +1,61 @@
+.container {
+  font-family: "Cormorant Infant", serif;
+  max-width: 1400px;
+  margin: 0 auto;
+}
 header {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.7)),
     url(/media/bologna.jpg);
   background-position: center;
   background-size: cover;
-  height: 400px;
-  max-width: 1300px;
-  margin: 0 auto;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-.heading {
-font-family: 'Tenor Sans', sans-serif;
-
+  background-repeat: no-repeat;
+  text-align: center;
   color: white;
-  font-size: 60px;
-
-  line-height: 50px;
+  padding: 200px;
 }
-p {
+
+header h3 {
+  font-size: 30px;
+  margin: 0;
+}
+header h1 {
+  font-family: "Tenor Sans", sans-serif;
+  font-size: 96px;
+  margin: 30px 0;
+  line-height: 1;
+}
+header h2 {
+  font-size: 40px;
+  line-height: 1.5;
+  letter-spacing: 3px;
+  margin: 0;
+}
+.header-link {
+  font-size: 20px;
+  color: rgb(79, 75, 75);
+  text-decoration: none;
+  display: inline-block;
+  margin-top: 32px;
+  padding: 16px 32px;
+  background-color: white;
+}
+footer p {
   font-family: "Montserrat", sans-serif;
+  font-size: 10px;
+  text-align: center;
+}
+
+@media (max-width: 900px) {
+  header {
+    padding: 30px 0;
+  }
+  header h1{
+    font-size: 48px;
+  }
+   header h2{
+    font-size: 20px;
+  }
+   header h3{
+    font-size: 15px;
+  }
 }
