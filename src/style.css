@@ -45,17 +45,29 @@ footer p {
   text-align: center;
 }
 
-@media (max-width: 900px) {
+.footer-container {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+    url(/media/bologna-towers.jpg);
+  color: white;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 50px 0;
+}
+
+footer h3{
+   font-family: "Tenor Sans", sans-serif;
+}
+@media (max-width: 960px) {
   header {
     padding: 30px 0;
   }
-  header h1{
+  header h1 {
     font-size: 48px;
   }
-   header h2{
+  header h2 {
     font-size: 20px;
   }
-   header h3{
+  header h3 {
     font-size: 15px;
   }
 }
