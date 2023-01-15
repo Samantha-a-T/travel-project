@@ -1,3 +1,6 @@
+body{
+    margin:0;
+}
 .container {
   font-family: "Cormorant Infant", serif;
   max-width: 1400px;
@@ -39,22 +42,26 @@ header h2 {
   padding: 16px 32px;
   background-color: white;
 }
-footer p {
+
+.coder {
   font-family: "Montserrat", sans-serif;
   font-size: 10px;
   text-align: center;
+  margin: 0;
 }
-
+.coder a{
+    color:white;
+}
 .footer-container {
   background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
     url(/media/bologna-towers.jpg);
   color: white;
   background-repeat: no-repeat;
   background-size: cover;
-  padding: 50px 0;
+  
 }
 
-footer h3{
+.footer-container h3{
    font-family: "Tenor Sans", sans-serif;
 }
 @media (max-width: 960px) {
