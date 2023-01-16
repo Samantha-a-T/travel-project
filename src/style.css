@@ -2,12 +2,15 @@ body {
   margin: 0;
 }
 section {
-  max-width: 1200px;
+  max-width: 1000px;
   margin: 0 auto;
+  padding: 40px 0;
 }
-.container {
-  font-family: "Cormorant Infant", serif;
+section h2,
+section h3 {
+  font-family: "Tenor Sans", sans-serif;
 }
+
 header {
   background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.7)),
     url(/media/bologna.jpg);
@@ -17,6 +20,11 @@ header {
   text-align: center;
   color: white;
   padding: 200px;
+}
+header h3,
+header h2,
+header a {
+  font-family: "Cormorant Infant", serif;
 }
 
 header h3 {
@@ -44,6 +52,26 @@ header h2 {
   padding: 16px 32px;
   background-color: white;
 }
+main p {
+  font-family: "Cormorant Infant", serif;
+  font-weight: 900;
+  font-size: 16px;
+  line-height: 24px;
+  opacity: 0.6;
+}
+main h2 {
+  font-size: 40px;
+  line-height: 1.5;
+  margin: 0;
+}
+main h3 {
+  font-size: 16px;
+  line-height: 1.5;
+  opacity: 0.3;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  margin: 0;
+}
 
 footer {
   background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
@@ -63,6 +91,11 @@ footer ul {
 footer a {
   color: white;
 }
+footer ul,
+footer p {
+  font-family: "Cormorant Infant", serif;
+  font-weight: 900;
+}
 footer p {
   opacity: 0.6;
 }
@@ -71,15 +104,32 @@ footer h3 {
 }
 .grid {
   display: grid;
-  grid-template-columns: 1fr 2fr 2fr;
-  padding-top: 50px;
+  padding-bottom: 0px;
   gap: 60px;
+}
+.grid-2-columns {
+  grid-template-columns: 1fr 1fr;
+}
+.grid-3-columns-1fr2fr2fr {
+  grid-template-columns: 1fr 2fr 2fr;
+ 
+}
+.grid-image{
+    display: block;
+    max-width:100%; 
+ 
+}
+.image-container{
+    width:500px;
+    height: 450px;
+    overflow: hidden;
+    margin-bottom: 60px;
 }
 .coder {
   font-family: "Montserrat", sans-serif;
   font-size: 10px;
   text-align: center;
-  margin: 50px 0 0;
+
   opacity: 1;
 }
 
@@ -96,4 +146,12 @@ footer h3 {
   header h3 {
     font-size: 15px;
   }
+.grid{
+    grid-template-columns: 1fr;
+    gap:20px;
+}
+section{
+    padding:20px;
+}
+
 }
