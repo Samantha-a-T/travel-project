@@ -136,7 +136,7 @@ footer h3 {
 }
 .grid-image {
   display: block;
-  max-width: 100%;
+  width: 100%;
 }
 .image-container {
   width: 500px;
@@ -146,26 +146,33 @@ footer h3 {
 }
 .card {
   background-color: white;
-  margin:30px 0;
+  margin: 30px 0;
 }
-.card-body{
-    padding: 30px;
+.card-header.grid{
+gap:0;
 }
-.card-footer{
-    padding: 0 30px 10px;
+.card-body {
+  padding: 30px;
 }
-.button{
-    display: block;
-    margin: 0 auto;
-    color: white;
-    background-color: black;
-    padding: 16px;
-    text-align: center;
-    text-transform: uppercase;
-    text-decoration: none;
-    font-size: 14px;
-    line-height: 21px;
-    letter-spacing: 3px;
+.card-footer {
+  padding: 0 30px 10px;
+}
+.embed{
+    width: 100%;
+  aspect-ratio: 1/1;
+}
+.button {
+  display: block;
+  margin: 0 auto;
+  color: white;
+  background-color: black;
+  padding: 16px;
+  text-align: center;
+  text-transform: uppercase;
+  text-decoration: none;
+  font-size: 14px;
+  line-height: 21px;
+  letter-spacing: 3px;
 }
 .coder {
   font-family: "Montserrat", sans-serif;
@@ -192,5 +199,11 @@ footer h3 {
   }
   section {
     padding: 20px;
+  }
+  .card-header img{
+display: none;
+  }
+  .embed{
+    aspect-ratio: 16/9;
   }
 }
