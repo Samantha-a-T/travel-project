@@ -73,6 +73,7 @@ footer h3 {
   display: grid;
   grid-template-columns: 1fr 2fr 2fr;
   padding-top: 50px;
+  gap: 60px;
 }
 .coder {
   font-family: "Montserrat", sans-serif;
