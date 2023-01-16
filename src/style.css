@@ -1,5 +1,6 @@
 body {
   margin: 0;
+  padding-bottom: 0;
 }
 section {
   max-width: 100%;
@@ -87,8 +88,8 @@ main h5 {
 section.second {
   background-color: rgb(255, 228, 196, 0.3);
 }
-section.second h2,
-section.second h3 {
+
+.centered-text {
   text-align: center;
 }
 footer {
@@ -97,6 +98,7 @@ footer {
   color: white;
   background-repeat: no-repeat;
   background-size: cover;
+  padding-bottom: 100px;
 }
 
 footer ul {
@@ -139,17 +141,25 @@ footer h3 {
   width: 100%;
 }
 .image-container {
-  width: 500px;
-  height: 450px;
+  max-width: 500px;
+  max-height: 450px;
   overflow: hidden;
   margin-bottom: 100px;
+}
+.gallery-grid {
+  display: grid;
+  gap: 10px;
+  padding-top: 30px;
+}
+.gallery-grid img {
+  max-width: 100%;
 }
 .card {
   background-color: white;
   margin: 30px 0;
 }
-.card-header.grid{
-gap:0;
+.card-header.grid {
+  gap: 0;
 }
 .card-body {
   padding: 30px;
@@ -157,8 +167,8 @@ gap:0;
 .card-footer {
   padding: 0 30px 10px;
 }
-.embed{
-    width: 100%;
+.embed {
+  width: 100%;
   aspect-ratio: 1/1;
 }
 .button {
@@ -174,11 +184,10 @@ gap:0;
   line-height: 21px;
   letter-spacing: 3px;
 }
-.coder {
-  font-family: "Montserrat", sans-serif;
-  font-size: 10px;
-  text-align: center;
+.instagram-embed {
+  margin: 30px;
 }
+
 
 @media (max-width: 960px) {
   header {
@@ -200,10 +209,13 @@ gap:0;
   section {
     padding: 20px;
   }
-  .card-header img{
-display: none;
+  .card-header img {
+    display: none;
   }
-  .embed{
+  .embed {
     aspect-ratio: 16/9;
+  }
+  .grid-3-columns {
+    grid-template-columns: 1fr 1fr;
   }
 }
