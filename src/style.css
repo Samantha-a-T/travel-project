@@ -2,12 +2,14 @@ body {
   margin: 0;
 }
 section {
-  max-width: 1000px;
+  max-width: 100%;
   margin: 0 auto;
-  padding: 40px 0;
+  padding: 100px;
 }
 section h2,
-section h3 {
+section h3,
+.card h4,
+.card h5 {
   font-family: "Tenor Sans", sans-serif;
 }
 
@@ -72,7 +74,23 @@ main h3 {
   text-transform: uppercase;
   margin: 0;
 }
-
+main h4 {
+  font-size: 24px;
+  line-height: 1;
+  margin: 0;
+}
+main h5 {
+  font-size: 13px;
+  line-height: 1.5;
+  margin: 0;
+}
+section.second {
+  background-color: rgb(255, 228, 196, 0.3);
+}
+section.second h2,
+section.second h3 {
+  text-align: center;
+}
 footer {
   background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
     url(/media/bologna-towers.jpg);
@@ -112,25 +130,47 @@ footer h3 {
 }
 .grid-3-columns-1fr2fr2fr {
   grid-template-columns: 1fr 2fr 2fr;
- 
 }
-.grid-image{
+.grid-3-columns {
+  grid-template-columns: 1fr 1fr 1fr;
+}
+.grid-image {
+  display: block;
+  max-width: 100%;
+}
+.image-container {
+  width: 500px;
+  height: 450px;
+  overflow: hidden;
+  margin-bottom: 100px;
+}
+.card {
+  background-color: white;
+  margin:30px 0;
+}
+.card-body{
+    padding: 30px;
+}
+.card-footer{
+    padding: 0 30px 10px;
+}
+.button{
     display: block;
-    max-width:100%; 
- 
-}
-.image-container{
-    width:500px;
-    height: 450px;
-    overflow: hidden;
-    margin-bottom: 60px;
+    margin: 0 auto;
+    color: white;
+    background-color: black;
+    padding: 16px;
+    text-align: center;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-size: 14px;
+    line-height: 21px;
+    letter-spacing: 3px;
 }
 .coder {
   font-family: "Montserrat", sans-serif;
   font-size: 10px;
   text-align: center;
-
-  opacity: 1;
 }
 
 @media (max-width: 960px) {
@@ -146,12 +186,11 @@ footer h3 {
   header h3 {
     font-size: 15px;
   }
-.grid{
+  .grid {
     grid-template-columns: 1fr;
-    gap:20px;
-}
-section{
-    padding:20px;
-}
-
+    gap: 20px;
+  }
+  section {
+    padding: 20px;
+  }
 }
