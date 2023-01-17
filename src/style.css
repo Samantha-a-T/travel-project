@@ -137,14 +137,15 @@ footer h3 {
   grid-template-columns: 1fr 1fr 1fr;
 }
 .grid-image {
-  display: block;
   width: 100%;
 }
 .image-container {
-  max-width: 500px;
-  max-height: 450px;
-  overflow: hidden;
+height: 500px;
+width: auto;
+  background-position: center;
+  background-image: cover;
   margin-bottom: 100px;
+  background-image: url(/media/bologna-street.jpg);
 }
 .gallery-grid {
   display: grid;
@@ -184,10 +185,6 @@ footer h3 {
   line-height: 21px;
   letter-spacing: 3px;
 }
-.instagram-embed {
-  margin: 30px;
-}
-
 
 @media (max-width: 960px) {
   header {
@@ -215,7 +212,10 @@ footer h3 {
   .embed {
     aspect-ratio: 16/9;
   }
-  .grid-3-columns {
+  .gallery-grid.grid-3-columns {
     grid-template-columns: 1fr 1fr;
+  }
+  .image-container{
+    margin-bottom: 0;
   }
 }
