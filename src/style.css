@@ -138,10 +138,12 @@ footer h3 {
 }
 .grid-image {
   width: 100%;
+  height: 200px;
+  object-fit: cover;
 }
 .image-container {
-height: 500px;
-width: auto;
+  height: 500px;
+  width: auto;
   background-position: center;
   background-image: cover;
   margin-bottom: 100px;
@@ -162,6 +164,7 @@ width: auto;
 .card-header.grid {
   gap: 0;
 }
+
 .card-body {
   padding: 30px;
 }
@@ -170,6 +173,7 @@ width: auto;
 }
 .embed {
   width: 100%;
+  height: 200px;
   aspect-ratio: 1/1;
 }
 .button {
@@ -215,7 +219,7 @@ width: auto;
   .gallery-grid.grid-3-columns {
     grid-template-columns: 1fr 1fr;
   }
-  .image-container{
+  .image-container {
     margin-bottom: 0;
   }
 }
